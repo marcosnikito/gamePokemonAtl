@@ -1,0 +1,144 @@
+#arena-body{
+    overflow-X: hidden;
+    overflow-y: hidden;
+    background-color: green;     
+}
+
+#btnJogar{
+    position: absolute !important;
+    top: 70px;
+    left: 50%;
+}
+.pokemonPlay1{
+    width: 100px;
+    height: 80px;
+    background-image: url("pokemons/picachu-ini.gif");
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+}
+
+.pokemonPlay2{
+    top: 100px;
+    width: 100px;
+    height: 80px;
+    background-image: url("pokemons/Jolteon-left.gif");
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+}
+
+#areaTipo{
+    width: 100px;
+    height: 80px;
+    position: absolute;
+    top: 100px;
+    border: 1px solid blue;
+}
+
+#areaTipoPlay2{
+    width: 100px;
+    height: 80px;
+    position: absolute;
+    top: 100px;
+    border: 1px solid blue;
+}
+
+
+#barraVida{
+    width: 300PX;
+    height: 20PX;
+    background-color: chartreuse;
+}
+#medidorVida{
+    width: 100%;
+    height: 20px;
+    border: 1px solid #0099FF;
+}
+
+#barraVidaPlay2{
+    width: 300PX;
+    height: 20PX;
+    right: 0px !important;
+    background-color: crimson;
+}
+.tiroJog{
+    width: 20px;
+    height: 51px;
+    background-image: url("pokemons/raiopikachu1.png");
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+}
+
+.powerP2{
+    width: 20px;
+    height: 51;
+    background-image: url("pokemons/raiopikachu1.png");
+    background-position: center;
+    background-size: cover;
+    position: absolute;    
+}
+
+.explosaoChao{
+    width: 55px;
+    height: 57px;
+    max-width: 55px;
+    min-width: 55px;
+    max-height: 57px;
+    min-height: 57px;
+    position: absolute;
+}
+.explosaoAr{
+    width: 55px;
+    height: 57px;
+    max-width: 55px;
+    min-width: 55px;
+    max-height: 57px;
+    min-height: 57px;
+    position: absolute;
+}
+.telaMsg{
+    position: absolute;
+    width: 30%;
+    height: auto;
+    display: none;
+    background-position: center;
+    background-size: 90%;
+    background-repeat: no-repeat;
+}
+
+#eixos{
+    position: absolute;
+    float: right;
+    top: 100px;
+    background-color: black;
+    color: #FFF;
+}
+
+#fotoPlayer1{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background-image: url("/pokemons/ash.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#fotoPlayer2{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background-image: url("/pokemons/block.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    right: 0px;
+}
+#container_vida_player1{
+
+}
+#container_vida_player2{
+right: 0px;
+position: absolute;
+}

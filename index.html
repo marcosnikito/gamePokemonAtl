@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="pokemon">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Welcome coach</title>
+    <script src="angular-1.7.4/angular.js"></script>
+    <script src="angular-1.7.4/angular-route.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <script src="arena/controllers/arena.controller.js"></script>
+    <link rel="stylesheet" href="pokemon.css">
+    <script src="assets/directives/menu.directive.js"></script>
+    <script src="assets/controllers/cadastro.controller.js"></script>
+    <script src="assets/controllers/login.controller.js"></script>
+    <script src="assets/services/baseDeDados.service.js"></script>
+    <script src="assets/services/usuario.service.js"></script>
+</head>
+<body style="display: block; overflow-x: hidden; overflow-y: hidden;">
+        <menu-directive></menu-directive>
+    <div ng-view></div>
+</body>
+</html>

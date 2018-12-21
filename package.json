@@ -1,0 +1,15 @@
+{
+  "name": "pokemonangular",
+  "version": "1.0.0",
+  "description": "jogo do pokemon",
+  "main": "app.js",
+  "scripts": {
+    "start": "http-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Marcos Henrique",
+  "license": "ISC",
+  "dependencies": {
+    "http-server": "^0.11.1"
+  }
+}

@@ -1,0 +1,22 @@
+<div ng-controller="cadastroController as cd" class="col-lg-4 text-center container">
+    <form class="form-signin">      
+        <h1 class="h3 mb-3 font-weight-normal">Formulario de cadastro</h1>
+        <label for="inputEmail" class="sr-only">e-mail:</label>
+        <input type="text" id="inputEmail" ng-model="cd.email" class="form-control" placeholder="Email address" required="" autofocus="">
+      <br>
+        <label for="inputUser" class="sr-only">Usuario:</label>
+        <input type="text" id="inputUser" ng-model="cd.usuario" class="form-control" placeholder="Usuario" required="">
+      <br>
+        <label for="inputPassword" class="sr-only">Senha:</label>
+        <input type="password" id="inputPassword" ng-model="cd.senha" class="form-control" placeholder="Password" required="">
+      <br>
+        <button class="btn btn-lg btn-primary btn-block" type="button" ng-click="cd.cadastrarUsuario(cd.email, cd.usuario, cd.senha)">Cadastrar</button>
+        <p class="mt-5 mb-3 text-muted">© 2018</p>
+      </form>
+   <div class="container text-left">
+    <h4>Usuarios ja cadastrados</h4>
+    <ul ng-repeat="user in cd.usersCadastrados" style="list-style: none;">
+     <li>{{user.usuario}}</li>
+    </ul>
+   </div>
+  </div>

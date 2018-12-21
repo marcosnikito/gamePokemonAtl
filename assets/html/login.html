@@ -1,0 +1,19 @@
+<div ng-controller="loginController as lg" ng-init="lg.verificaLogin()" class="col-lg-4 text-center container">
+    <form class="form-signin">      
+       <h1 class="h3 mb-3 font-weight-normal">Preencha para logar</h1>
+       <label for="inputUser" class="sr-only">email/usuario</label>
+       <input type="text" id="inputUser" ng-model="lg.emailUser" class="form-control" placeholder="email ou nome de usuario" required="" autofocus="">
+     <div class="alert alert-danger" role="alert" ng-if="lg.usuarioInv">
+   Usuario não encontrado
+ </div>
+     <br>
+       <label for="inputPassword" class="sr-only">Senha</label>
+       <input type="password" id="inputPassword" ng-model="lg.senha" class="form-control" placeholder="Password" required="">
+     <div class="alert alert-danger" role="alert" ng-if="lg.senhaInv">
+        Senha invalida
+     </div>
+      <br>
+       <button class="btn btn-lg btn-primary btn-block" ng-click="lg.logar(lg.emailUser, lg.senha)" type="button">Entrar</button>
+       <p class="mt-5 mb-3 text-muted">© 2018</p>
+     </form>
+ </div>
